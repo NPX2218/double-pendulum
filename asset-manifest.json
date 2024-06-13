@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef1ccc97.css",
-    "main.js": "/static/js/main.1adfe871.js",
-    "static/js/346.ba73095b.chunk.js": "/static/js/346.ba73095b.chunk.js",
-    "static/js/314.7a5aa775.chunk.js": "/static/js/314.7a5aa775.chunk.js",
-    "static/js/608.3615d991.chunk.js": "/static/js/608.3615d991.chunk.js",
-    "static/js/585.b5e21432.chunk.js": "/static/js/585.b5e21432.chunk.js",
-    "static/js/204.a9e92bc1.chunk.js": "/static/js/204.a9e92bc1.chunk.js",
-    "static/js/621.469a321c.chunk.js": "/static/js/621.469a321c.chunk.js",
-    "index.html": "/index.html",
-    "main.ef1ccc97.css.map": "/static/css/main.ef1ccc97.css.map",
-    "main.1adfe871.js.map": "/static/js/main.1adfe871.js.map",
-    "346.ba73095b.chunk.js.map": "/static/js/346.ba73095b.chunk.js.map",
-    "314.7a5aa775.chunk.js.map": "/static/js/314.7a5aa775.chunk.js.map",
-    "608.3615d991.chunk.js.map": "/static/js/608.3615d991.chunk.js.map",
-    "585.b5e21432.chunk.js.map": "/static/js/585.b5e21432.chunk.js.map",
-    "204.a9e92bc1.chunk.js.map": "/static/js/204.a9e92bc1.chunk.js.map",
-    "621.469a321c.chunk.js.map": "/static/js/621.469a321c.chunk.js.map"
+    "main.css": "/double-pendulum/static/css/main.ef1ccc97.css",
+    "main.js": "/double-pendulum/static/js/main.dd1169ee.js",
+    "static/js/346.b5e9add5.chunk.js": "/double-pendulum/static/js/346.b5e9add5.chunk.js",
+    "static/js/314.3486919e.chunk.js": "/double-pendulum/static/js/314.3486919e.chunk.js",
+    "static/js/608.857cba2c.chunk.js": "/double-pendulum/static/js/608.857cba2c.chunk.js",
+    "static/js/585.860e83e8.chunk.js": "/double-pendulum/static/js/585.860e83e8.chunk.js",
+    "static/js/204.ed58aa20.chunk.js": "/double-pendulum/static/js/204.ed58aa20.chunk.js",
+    "static/js/621.fa8e8be2.chunk.js": "/double-pendulum/static/js/621.fa8e8be2.chunk.js",
+    "index.html": "/double-pendulum/index.html",
+    "main.ef1ccc97.css.map": "/double-pendulum/static/css/main.ef1ccc97.css.map",
+    "main.dd1169ee.js.map": "/double-pendulum/static/js/main.dd1169ee.js.map",
+    "346.b5e9add5.chunk.js.map": "/double-pendulum/static/js/346.b5e9add5.chunk.js.map",
+    "314.3486919e.chunk.js.map": "/double-pendulum/static/js/314.3486919e.chunk.js.map",
+    "608.857cba2c.chunk.js.map": "/double-pendulum/static/js/608.857cba2c.chunk.js.map",
+    "585.860e83e8.chunk.js.map": "/double-pendulum/static/js/585.860e83e8.chunk.js.map",
+    "204.ed58aa20.chunk.js.map": "/double-pendulum/static/js/204.ed58aa20.chunk.js.map",
+    "621.fa8e8be2.chunk.js.map": "/double-pendulum/static/js/621.fa8e8be2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef1ccc97.css",
-    "static/js/main.1adfe871.js"
+    "static/js/main.dd1169ee.js"
   ]
 }
