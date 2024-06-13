@@ -3,7 +3,7 @@
 /////////////////////////////////////
 
 import React, { useState, useEffect, lazy, Suspense, useRef } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 /////////////////////////////////////
 // COMPONENT: ROUTER
@@ -39,7 +39,7 @@ const Router: React.FC = (): JSX.Element => {
   const ErrorPage = lazy(() => import("../pages/404/ErrorPage"));
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/double-pendulum">
       <Routes>
         <Route
           path="/"

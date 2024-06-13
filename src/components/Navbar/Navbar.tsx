@@ -3,7 +3,7 @@
 /////////////////////////////////////
 
 import React, { useState, useEffect } from "react";
-
+import pendulumLogo from "./pendulum_logo.gif";
 /////////////////////////////////////
 // COMPONENT: NAVBAR
 /////////////////////////////////////
@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="w-full mx-auto px-6 py-4 flex justify-between items-center">
         <a href="/">
           <div className="flex items-center space-x-3 justify-center flex-row ">
-            <img src="./pendulum_logo.gif" width="80" height="80" />
+            <img src={pendulumLogo} width="80" height="80" />
             <div className="sm:text-2xl text-xl md:text-4xl font-bold">
               Double Pendulum
             </div>
