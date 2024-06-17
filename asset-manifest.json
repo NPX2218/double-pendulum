@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/double-pendulum/static/css/main.ba0c69b1.css",
-    "main.js": "/double-pendulum/static/js/main.b93a7829.js",
+    "main.js": "/double-pendulum/static/js/main.e124b27e.js",
     "static/js/346.b5e9add5.chunk.js": "/double-pendulum/static/js/346.b5e9add5.chunk.js",
     "static/js/585.1221d3d6.chunk.js": "/double-pendulum/static/js/585.1221d3d6.chunk.js",
     "static/js/204.ed58aa20.chunk.js": "/double-pendulum/static/js/204.ed58aa20.chunk.js",
     "static/media/pendulum_logo.gif": "/double-pendulum/static/media/pendulum_logo.9345dd9d5cf27a38f842.gif",
     "index.html": "/double-pendulum/index.html",
     "main.ba0c69b1.css.map": "/double-pendulum/static/css/main.ba0c69b1.css.map",
-    "main.b93a7829.js.map": "/double-pendulum/static/js/main.b93a7829.js.map",
+    "main.e124b27e.js.map": "/double-pendulum/static/js/main.e124b27e.js.map",
     "346.b5e9add5.chunk.js.map": "/double-pendulum/static/js/346.b5e9add5.chunk.js.map",
     "585.1221d3d6.chunk.js.map": "/double-pendulum/static/js/585.1221d3d6.chunk.js.map",
     "204.ed58aa20.chunk.js.map": "/double-pendulum/static/js/204.ed58aa20.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba0c69b1.css",
-    "static/js/main.b93a7829.js"
+    "static/js/main.e124b27e.js"
   ]
 }
