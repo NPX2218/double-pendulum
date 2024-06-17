@@ -1,26 +1,20 @@
 {
   "files": {
     "main.css": "/double-pendulum/static/css/main.ef1ccc97.css",
-    "main.js": "/double-pendulum/static/js/main.770625d5.js",
+    "main.js": "/double-pendulum/static/js/main.dd478fcf.js",
     "static/js/346.b5e9add5.chunk.js": "/double-pendulum/static/js/346.b5e9add5.chunk.js",
-    "static/js/786.72c74cfa.chunk.js": "/double-pendulum/static/js/786.72c74cfa.chunk.js",
-    "static/js/912.654456f4.chunk.js": "/double-pendulum/static/js/912.654456f4.chunk.js",
-    "static/js/165.adf805b4.chunk.js": "/double-pendulum/static/js/165.adf805b4.chunk.js",
+    "static/js/585.1221d3d6.chunk.js": "/double-pendulum/static/js/585.1221d3d6.chunk.js",
     "static/js/204.ed58aa20.chunk.js": "/double-pendulum/static/js/204.ed58aa20.chunk.js",
-    "static/js/621.fa8e8be2.chunk.js": "/double-pendulum/static/js/621.fa8e8be2.chunk.js",
     "static/media/pendulum_logo.gif": "/double-pendulum/static/media/pendulum_logo.9345dd9d5cf27a38f842.gif",
     "index.html": "/double-pendulum/index.html",
     "main.ef1ccc97.css.map": "/double-pendulum/static/css/main.ef1ccc97.css.map",
-    "main.770625d5.js.map": "/double-pendulum/static/js/main.770625d5.js.map",
+    "main.dd478fcf.js.map": "/double-pendulum/static/js/main.dd478fcf.js.map",
     "346.b5e9add5.chunk.js.map": "/double-pendulum/static/js/346.b5e9add5.chunk.js.map",
-    "786.72c74cfa.chunk.js.map": "/double-pendulum/static/js/786.72c74cfa.chunk.js.map",
-    "912.654456f4.chunk.js.map": "/double-pendulum/static/js/912.654456f4.chunk.js.map",
-    "165.adf805b4.chunk.js.map": "/double-pendulum/static/js/165.adf805b4.chunk.js.map",
-    "204.ed58aa20.chunk.js.map": "/double-pendulum/static/js/204.ed58aa20.chunk.js.map",
-    "621.fa8e8be2.chunk.js.map": "/double-pendulum/static/js/621.fa8e8be2.chunk.js.map"
+    "585.1221d3d6.chunk.js.map": "/double-pendulum/static/js/585.1221d3d6.chunk.js.map",
+    "204.ed58aa20.chunk.js.map": "/double-pendulum/static/js/204.ed58aa20.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef1ccc97.css",
-    "static/js/main.770625d5.js"
+    "static/js/main.dd478fcf.js"
   ]
 }
