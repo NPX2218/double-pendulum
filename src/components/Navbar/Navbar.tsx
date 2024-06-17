@@ -42,7 +42,7 @@ const Navbar = ({ scroll }) => {
   return (
     <nav className="text-white w-full">
       <div className="w-full mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/">
+        <a href="/double-pendulum/">
           <div className="flex items-center space-x-3 justify-center flex-row">
             <img
               src={pendulumLogo}
