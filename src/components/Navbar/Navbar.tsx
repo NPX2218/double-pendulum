@@ -4,13 +4,12 @@
 
 import React, { useState, useEffect } from "react";
 import pendulumLogo from "./pendulum_logo.gif";
-import { HashLink } from "react-router-hash-link";
 
 /////////////////////////////////////
 // COMPONENT: NAVBAR
 /////////////////////////////////////
 
-const Navbar = ({ scroll }: any) => {
+const Navbar = ({ scroll }) => {
   const [isMobile, setIsMobile] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -20,7 +19,6 @@ const Navbar = ({ scroll }: any) => {
     };
 
     window.addEventListener("resize", handleResize);
-
     handleResize();
 
     return () => {
@@ -32,12 +30,26 @@ const Navbar = ({ scroll }: any) => {
     setShowMenu(!showMenu);
   };
 
+  const handleNavigation = (selector, fallbackHref) => {
+    const element = document.querySelector(selector);
+    if (element) {
+      scroll.scrollTo(element);
+    } else if (fallbackHref) {
+      window.location.href = fallbackHref;
+    }
+  };
+
   return (
-    <nav className=" text-white w-full ">
+    <nav className="text-white w-full">
       <div className="w-full mx-auto px-6 py-4 flex justify-between items-center">
         <a href="/">
-          <div className="flex items-center space-x-3 justify-center flex-row ">
-            <img src={pendulumLogo} width="80" height="80" />
+          <div className="flex items-center space-x-3 justify-center flex-row">
+            <img
+              src={pendulumLogo}
+              width="80"
+              height="80"
+              alt="Pendulum Logo"
+            />
             <div className="sm:text-2xl text-xl md:text-4xl font-bold">
               Double Pendulum
             </div>
@@ -47,7 +59,7 @@ const Navbar = ({ scroll }: any) => {
         {isMobile ? (
           <button
             aria-label="Toggle Menu"
-            className=" text-gray-400 hover:text-white focus:text-white focus:outline-none"
+            className="text-gray-400 hover:text-white focus:text-white focus:outline-none"
             onClick={toggleMenu}
           >
             {showMenu ? (
@@ -86,18 +98,14 @@ const Navbar = ({ scroll }: any) => {
               Home
             </a>
             <a
-              onClick={() =>
-                scroll.scrollTo(document.querySelector("#introduction"))
-              }
+              onClick={() => handleNavigation("#introduction", "/")}
               className="cursor-pointer py-2 px-3 rounded"
             >
               Introduction
             </a>
             <a
               onClick={() =>
-                scroll.scrollTo(
-                  document.querySelector("#euler-lagrange-derivation")
-                )
+                handleNavigation("#euler-lagrange-derivation", "/")
               }
               className="cursor-pointer py-2 px-3 rounded"
             >
@@ -105,9 +113,7 @@ const Navbar = ({ scroll }: any) => {
             </a>
             <a
               onClick={() =>
-                scroll.scrollTo(
-                  document.querySelector("#double-pendulum-visualization")
-                )
+                handleNavigation("#double-pendulum-visualization", "/")
               }
               className="cursor-pointer py-2 px-3 rounded"
             >
@@ -116,46 +122,35 @@ const Navbar = ({ scroll }: any) => {
           </div>
         )}
       </div>
+
       {isMobile && showMenu && (
-        <div className=" w-full" id="navbar-dropdown">
-          <ul className="flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-black">
-            <li>
-              <a
-                href="/"
-                className="block py-2 px-3  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white  hover:bg-black hover:text-white "
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/about"
-                className="block py-2 px-3  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white  hover:bg-black hover:text-white "
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="/assignments-hub"
-                className="block py-2 px-3  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white  hover:bg-black hover:text-white "
-              >
-                Assignments
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#contact-form"
-                className="block py-2 px-3  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white  hover:bg-black hover:text-white "
-              >
-                Contact
-              </a>
-            </li>
-            <li>
-              <a className="py-2 px-3 rounded cursor-pointer">
-                "Sign In / Sign Up"
-              </a>
-            </li>
+        <div className="w-full" id="navbar-dropdown">
+          <ul className="flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-black">
+            <a href="/" className="cursor-pointer py-2 px-3 rounded">
+              Home
+            </a>
+            <a
+              onClick={() => handleNavigation("#introduction", "/")}
+              className="cursor-pointer py-2 px-3 rounded"
+            >
+              Introduction
+            </a>
+            <a
+              onClick={() =>
+                handleNavigation("#euler-lagrange-derivation", "/")
+              }
+              className="cursor-pointer py-2 px-3 rounded"
+            >
+              Euler Lagrange
+            </a>
+            <a
+              onClick={() =>
+                handleNavigation("#double-pendulum-visualization", "/")
+              }
+              className="cursor-pointer py-2 px-3 rounded"
+            >
+              Visualizer
+            </a>
           </ul>
         </div>
       )}

@@ -34,7 +34,7 @@ const Router: React.FC = (): JSX.Element => {
   }, []);
 
   const ErrorPage = lazy(() => import("../pages/404/ErrorPage"));
-  // basename="/double-pendulum"
+  //basename="/double-pendulum"
   return (
     <HashRouter>
       <Routes>
