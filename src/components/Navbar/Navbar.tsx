@@ -94,18 +94,26 @@ const Navbar = ({ scroll }) => {
           </button>
         ) : (
           <div className="md:flex flex-col md:flex-row md:space-x-8">
-            <a href="/" className="cursor-pointer py-2 px-3 rounded">
+            <a
+              href="/double-pendulum/"
+              className="cursor-pointer py-2 px-3 rounded"
+            >
               Home
             </a>
             <a
-              onClick={() => handleNavigation("#introduction", "/")}
+              onClick={() =>
+                handleNavigation("#introduction", "/double-pendulum")
+              }
               className="cursor-pointer py-2 px-3 rounded"
             >
               Introduction
             </a>
             <a
               onClick={() =>
-                handleNavigation("#euler-lagrange-derivation", "/")
+                handleNavigation(
+                  "#euler-lagrange-derivation",
+                  "/double-pendulum"
+                )
               }
               className="cursor-pointer py-2 px-3 rounded"
             >
@@ -113,7 +121,10 @@ const Navbar = ({ scroll }) => {
             </a>
             <a
               onClick={() =>
-                handleNavigation("#double-pendulum-visualization", "/")
+                handleNavigation(
+                  "#double-pendulum-visualization",
+                  "/double-pendulum"
+                )
               }
               className="cursor-pointer py-2 px-3 rounded"
             >
@@ -126,18 +137,26 @@ const Navbar = ({ scroll }) => {
       {isMobile && showMenu && (
         <div className="w-full" id="navbar-dropdown">
           <ul className="flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-black">
-            <a href="/" className="cursor-pointer py-2 px-3 rounded">
+            <a
+              href="/double-pendulum/"
+              className="cursor-pointer py-2 px-3 rounded"
+            >
               Home
             </a>
             <a
-              onClick={() => handleNavigation("#introduction", "/")}
+              onClick={() =>
+                handleNavigation("#introduction", "/double-pendulum")
+              }
               className="cursor-pointer py-2 px-3 rounded"
             >
               Introduction
             </a>
             <a
               onClick={() =>
-                handleNavigation("#euler-lagrange-derivation", "/")
+                handleNavigation(
+                  "#euler-lagrange-derivation",
+                  "/double-pendulum"
+                )
               }
               className="cursor-pointer py-2 px-3 rounded"
             >
@@ -145,7 +164,10 @@ const Navbar = ({ scroll }) => {
             </a>
             <a
               onClick={() =>
-                handleNavigation("#double-pendulum-visualization", "/")
+                handleNavigation(
+                  "#double-pendulum-visualization",
+                  "/double-pendulum"
+                )
               }
               className="cursor-pointer py-2 px-3 rounded"
             >
