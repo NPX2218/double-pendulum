@@ -4,11 +4,13 @@
 
 import React, { useState, useEffect } from "react";
 import pendulumLogo from "./pendulum_logo.gif";
+import { HashLink } from "react-router-hash-link";
+
 /////////////////////////////////////
 // COMPONENT: NAVBAR
 /////////////////////////////////////
 
-const Navbar = () => {
+const Navbar = ({ scroll }: any) => {
   const [isMobile, setIsMobile] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -80,23 +82,34 @@ const Navbar = () => {
           </button>
         ) : (
           <div className="md:flex flex-col md:flex-row md:space-x-8">
-            <a href="/" className="py-2 px-3 rounded">
+            <a href="/" className="cursor-pointer py-2 px-3 rounded">
               Home
             </a>
-
             <a
-              href="#introduction"
-              data-scroll-target="#introduction"
-              className="py-2 px-3 rounded"
+              onClick={() =>
+                scroll.scrollTo(document.querySelector("#introduction"))
+              }
+              className="cursor-pointer py-2 px-3 rounded"
             >
               Introduction
             </a>
-            <a href="#euler-lagrange-derivation" className="py-2 px-3 rounded">
+            <a
+              onClick={() =>
+                scroll.scrollTo(
+                  document.querySelector("#euler-lagrange-derivation")
+                )
+              }
+              className="cursor-pointer py-2 px-3 rounded"
+            >
               Euler Lagrange
             </a>
             <a
-              href="#double-pendulum-visualization"
-              className="py-2 px-3 rounded"
+              onClick={() =>
+                scroll.scrollTo(
+                  document.querySelector("#double-pendulum-visualization")
+                )
+              }
+              className="cursor-pointer py-2 px-3 rounded"
             >
               Visualizer
             </a>

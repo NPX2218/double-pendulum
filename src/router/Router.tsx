@@ -4,7 +4,8 @@
 
 import React, { useState, useEffect, lazy, Suspense, useRef } from "react";
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
-
+import Home from "../pages/Home/Home";
+import Bibliographies from "../pages/Bibliographies/Bibliographies";
 /////////////////////////////////////
 // COMPONENT: ROUTER
 /////////////////////////////////////
@@ -32,14 +33,10 @@ const Router: React.FC = (): JSX.Element => {
     }
   }, []);
 
-  const Home = lazy(() => import("../pages/Home/Home"));
-  const Bibliographies = lazy(
-    () => import("../pages/Bibliographies/Bibliographies")
-  );
   const ErrorPage = lazy(() => import("../pages/404/ErrorPage"));
-
+  // basename="/double-pendulum"
   return (
-    <BrowserRouter basename="/double-pendulum">
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -62,7 +59,7 @@ const Router: React.FC = (): JSX.Element => {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

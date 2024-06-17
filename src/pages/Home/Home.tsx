@@ -25,7 +25,7 @@ const Home = ({ scroll }: Props) => {
     <div>
       <div className="flex flex-col items-center py-12 bg-black">
         <div className="flex flex-col items-center self-stretch px-20 mt-1.5 w-full max-md:px-5 max-md:max-w-full">
-          <Navbar />
+          <Navbar scroll={scroll} />
         </div>
         <br />
         <br />
