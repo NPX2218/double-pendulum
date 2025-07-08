@@ -1,47 +1,44 @@
-# Getting Started with Create React App
+# 🧮 Double Pendulum Simulator & Chaos Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive physics simulation built with **Python Glowscript** and **React** that visualizes the **chaotic motion** of a double pendulum in real time. This project blends theoretical mechanics, mathematics, and intuitive visualization to make complex nonlinear dynamics accessible to learners, educators, and other interested individuals.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ⚙️ **Real-Time Simulation** – Watch the unpredictable, sensitive motion of a double pendulum evolve step-by-step.
+- 📜 **Lagrangian Mechanics** – Full equations of motion derived from first principles using the Euler-Lagrange formulation.
+- 🖋️ **Handwritten Derivations** – Included annotated handwritten notes and LaTeX-based steps for deeper insight into the math.
+- 📉 **Energy Conservation Checks** – Visual confirmation of total energy throughout the simulation to validate the model.
+- 🌀 **Chaos in Action** – Highlight how tiny changes in initial conditions produce wildly different outcomes — a core feature of deterministic chaos.
+- 🎓 **Educational Design** – Designed with clarity and learning in mind, perfect for students studying mechanics, math, or chaos theory.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📦 Getting Started
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/npx2218/double-pendulum.git
+cd double-pendulum
+```
 
-### `npm run build`
+2. Install the dependencies and run the code
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📚 Learn More
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Double Pendulum (Wikipedia)](https://en.wikipedia.org/wiki/Double_pendulum)
+- [Lagrangian Mechanics](https://en.wikipedia.org/wiki/Lagrangian_mechanics)
+- [Chaos Theory](https://en.wikipedia.org/wiki/Chaos_theory)
+- [Glowscript Documentation](https://www.glowscript.org/docs/)
+- [LaTeX for Equations](https://katex.org/docs/supported.html)
 
-### `npm run eject`
+# 👨‍💻 Author
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-"# double-pendulum" 
+Made by Neel Bansal
